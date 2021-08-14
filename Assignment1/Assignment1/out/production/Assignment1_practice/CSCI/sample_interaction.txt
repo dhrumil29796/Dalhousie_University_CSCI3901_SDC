@@ -1,0 +1,87 @@
+I am the coursinator.
+I will help you to coursinate your university
+
+Please enter a selection:
+	1: Enter data from file
+	2: Recommend some courses
+	3: Show conflicts
+	4: Output all conflicts to file
+	0: Exit
+1
+Please enter a filename
+/home/meamy/Code/CSCI3901/Assignment 1/src/sample_input.txt
+
+Please enter a selection:
+	1: Enter data from file
+	2: Recommend some courses
+	3: Show conflicts
+	4: Output all conflicts to file
+	0: Exit
+2
+
+Please enter a list of courses:
+csci2110
+
+Please enter a minimum support for recommendations:
+2
+
+Please enter a number of recommendations:
+2
+
+Recommendations: [CSCI2122, CSCI1110, CSCI2112, CSCI2134]
+
+Please enter a selection:
+	1: Enter data from file
+	2: Recommend some courses
+	3: Show conflicts
+	4: Output all conflicts to file
+	0: Exit
+2
+
+Please enter a list of courses:
+csci2110 csci2122
+
+Please enter a minimum support for recommendations:
+2
+
+Please enter a number of recommendations:
+3
+
+Recommendations: [CSCI1110, CSCI2112, CSCI2134]
+
+Please enter a selection:
+	1: Enter data from file
+	2: Recommend some courses
+	3: Show conflicts
+	4: Output all conflicts to file
+	0: Exit
+3
+
+Please enter a list of courses:
+csci2122 csci2110 csci2134
+
+CSCI2122	0	2	1
+CSCI2110	2	0	1
+CSCI2134	1	1	0
+
+Please enter a selection:
+	1: Enter data from file
+	2: Recommend some courses
+	3: Show conflicts
+	4: Output all conflicts to file
+	0: Exit
+4
+
+Please enter a filename:
+/home/meamy/Code/CSCI3901/Assignment 1/src/sample_output.txt
+
+Please enter a selection:
+	1: Enter data from file
+	2: Recommend some courses
+	3: Show conflicts
+	4: Output all conflicts to file
+	0: Exit
+0
+
+Later.
+

@@ -1,0 +1,12 @@
+4
+aaaa
+bbcd
+efcd
+efgg
+a 24 *
+b 3 +
+c 4 *
+d 12 *
+e 12 *
+f 6 *
+g 2 /

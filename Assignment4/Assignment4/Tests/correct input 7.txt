@@ -1,0 +1,55 @@
+9
+aabbccdee
+ffghijjkk
+lmghinnop
+lqrsttuov
+wqrsxyuzA
+wBCDxEFzA
+GBCDSEFHI
+GJKKSLLHM
+NJOOPPQRM
+a 2 /
+b 1 -
+c 2 -
+d 9 =
+e 8 /
+f 4 -
+g 9 +
+h 4 /
+i 2 /
+j 3 -
+k 18 *
+l 12 +
+m 1 =
+n 13 +
+o 10 +
+p 5 =
+q 1 -
+r 3 /
+s 5 /
+t 16 *
+u 4 -
+v 6 =
+w 1 -
+x 3 -
+y 1 =
+z 7 -
+A 4 /
+B 5 +
+C 1 -
+D 2 -
+E 5 -
+F 3 -
+G 5 -
+H 1 -
+I 7 =
+J 1 -
+K 6 +
+L 2 /
+M 11 +
+N 4 =
+O 3 -
+P 45 *
+Q 1 =
+R 8 =
+S 7 /

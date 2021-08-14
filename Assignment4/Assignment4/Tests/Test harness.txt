@@ -1,0 +1,205 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Test {
+    public static void main (String[] args) throws IOException {
+        Mathdoku m = new Mathdoku();
+
+        //Test Case 1:
+        System.out.println("Invalid input");
+        BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\invalid 1.txt"));
+        System.out.println(m.loadPuzzle(br));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+        System.out.println("Valid input");
+        BufferedReader be = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\sir.txt"));
+        System.out.println(m.loadPuzzle(be));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+
+
+        //Test Case 2:
+        System.out.println("All invalid inputs");
+	System.out.println("1: Operator other than allowed ones");
+        BufferedReader ba = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\invalid 1.txt"));
+        System.out.println(m.loadPuzzle(ba));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+	System.out.println("2: Assigning to group other than the ones mentioned in Section 2");
+        BufferedReader bb = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\invalid 2.txt"));
+        System.out.println(m.loadPuzzle(bb));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+	System.out.println("3: Assigning to group other than the ones mentioned in Section 2 with operator other than allowed");
+        BufferedReader bc = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\invalid 3.txt"));
+        System.out.println(m.loadPuzzle(bc));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+        System.out.println("4: nothing in section 1");
+        BufferedReader bd = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\invalid 4.txt"));
+        System.out.println(m.loadPuzzle(bd));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+	System.out.println("5: only 1 cell for + operator, validate will return false");
+        BufferedReader bf = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\invalid 5.txt"));
+        System.out.println(m.loadPuzzle(bf));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+        System.out.println("6: only 1 cell for / operator, validate will return false");
+        BufferedReader bg = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\invalid 6.txt"));
+        System.out.println(m.loadPuzzle(bg));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+        System.out.println("7: only 1 cell for - operator, validate will return false");
+        BufferedReader bh = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\invalid 7.txt"));
+        System.out.println(m.loadPuzzle(bh));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+        System.out.println("8: only 1 cell for * operator, validate will return false");
+        BufferedReader bi = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\invalid 8.txt"));
+        System.out.println(m.loadPuzzle(bi));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+        System.out.println("9: more than 1 cell for = operator, validate will return false");
+        BufferedReader bj = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\invalid 9.txt"));
+        System.out.println(m.loadPuzzle(bj));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+        System.out.println("10: constraints not set for all groupings");
+        BufferedReader bk = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\invalid 10.txt"));
+        System.out.println(m.loadPuzzle(bk));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+        System.out.println("11: group a not connected");
+	BufferedReader bbc = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\invalid 11.txt"));
+        System.out.println(m.loadPuzzle(bbc));
+        System.out.println(m.readyToSolve());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+	System.out.println("12: wrong file");
+	BufferedReader bbd = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\invalid 12.txt"));
+        System.out.println(m.loadPuzzle(bbd));
+        System.out.println(m.readyToSolve());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+
+
+        //Test Case 3:
+        System.out.println("Sir");
+        BufferedReader bl = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\sir.txt"));
+        System.out.println(m.loadPuzzle(bl));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+
+        System.out.println("Correct input - with spaces which will be ignored");
+        BufferedReader bm = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\correct input.txt"));
+        System.out.println(m.loadPuzzle(bm));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+
+        System.out.println("Correct input with extra - extra rows in section 3 which update the constraint");
+        BufferedReader bn = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\correct input with extra.txt"));
+        System.out.println(m.loadPuzzle(bn));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+
+        System.out.println("Correct input 2");
+        BufferedReader bo = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\correct input 2.txt"));
+        System.out.println(m.loadPuzzle(bo));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+
+        System.out.println("Correct input 3");
+        BufferedReader bkn = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\correct input 3.txt"));
+        System.out.println(m.loadPuzzle(bkn));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+
+
+
+        //Test Case 4:
+        System.out.println("validate before loadpuzzle");
+        Mathdoku m2 = new Mathdoku();
+        System.out.println(m2.validate());
+        System.out.println(m2.validate());
+
+
+        //Test Case 5:
+        System.out.println("choices before anything");
+        Mathdoku m3 = new Mathdoku();
+        System.out.println(m3.choices());
+
+
+        //Test Case 6:
+        System.out.println("solve before loadpuzzle");
+        Mathdoku m4 = new Mathdoku();
+        System.out.println(m4.solve());
+        System.out.println(m4.solve());
+
+
+        //Test Case 7:
+        System.out.println("print before loadpuzzle");
+        Mathdoku m5 = new Mathdoku();
+        System.out.println(m5.print());
+
+
+        //Test Case 8:
+        System.out.println("print-solve-print");
+        Mathdoku m6 = new Mathdoku();
+        BufferedReader bs = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\correct input.txt"));
+        System.out.println(m6.loadPuzzle(bs));
+        System.out.println(m6.print());
+        System.out.println(m6.solve());
+        System.out.println(m6.print());
+
+
+	//Test Case 9:
+	System.out.println("Unsolvable puzzle");
+        BufferedReader bks = new BufferedReader(new FileReader("C:\\Users\\Pradeep\\Documents\\MS\\Semester 1\\CSCI 3901\\Class assignments\\Assignment 4\\Test data\\Assignment 4\\unsolvable puzzle.txt"));
+        System.out.println(m.loadPuzzle(bks));
+        System.out.println(m.validate());
+        System.out.println(m.choices());
+        System.out.println(m.solve());
+        System.out.println(m.print());
+
+
+    }
+}

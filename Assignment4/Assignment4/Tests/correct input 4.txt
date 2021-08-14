@@ -1,0 +1,12 @@
+4
+aabb
+cdeb
+cdef
+ggef
+a     5 +
+b 8 *
+c 2 /
+d 2      -
+e 9 +
+f 2 -
+g 4 *

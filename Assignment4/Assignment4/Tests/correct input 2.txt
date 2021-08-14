@@ -1,0 +1,23 @@
+6
+KKBBBB
+aclsst
+acl$#t
+adm$#z
+bdmvxz
+bwwvxz
+K 6 *
+B 14 +
+a 10 +
+c 1 -
+l 7 +
+s 4 *
+t 2 /
+d 1 -
+m 1 -
+$ 30 *
+# 5 +
+b 3 -
+w 3 -
+v 7 +
+x 6 *
+z 30 *

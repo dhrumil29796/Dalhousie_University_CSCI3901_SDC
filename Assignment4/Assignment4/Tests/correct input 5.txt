@@ -1,0 +1,28 @@
+7
+aeejkkk
+adelmnn
+adfllno
+bdfflpp
+bdgiqrs
+bchiqrs
+cchitts
+a 10 +
+b 24 *
+c 15 +
+d 336 *
+e 6 +
+f 210 *
+g 5 =
+h 4 /
+i 9 +
+j 7 =
+k 48 *
+l 14 +
+m 5 =
+n 9 +
+o 5 =
+p 8 +
+q 1 -
+r 9 +
+s 42 *
+t 3 *

@@ -1,0 +1,37 @@
+8
+abbzzvus
+aaZZxvut
+ceeZxwut
+cdeyywrr
+ccfOmmrr
+hgfOnopq
+hggjkopp
+iijjklll
+a 15 +
+b 30 *
+c 10 +
+d 6 =
+e 112 *
+f 8 +
+g 21 *
+h 15 +
+i 20 *
+j 24 *
+k 4 -
+l 21 +
+m 1 -
+n 4 =
+o 16 *
+p 14 +
+q 1 =
+r 480 *
+s 2 =
+t 3 -
+u 15 *
+v 5 /
+w 7 +
+x 14 *
+y 5 +
+z 1 -
+Z 11 +
+O 40 *
